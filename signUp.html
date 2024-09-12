@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/assets/nike_logo.svg">
+    <script src="/signUp.js"></script>
+    <title>Welcomme to Nike - Join Us</title>
+</head>
+<body class="flex justify-center">
+    <div class="signin w-[37%] mt-8">
+        <div class="w-[45px] flex flex-row">
+            <img src="/assets/nike_logo.svg" alt="">
+            <img src="/assets/jordan_logo.svg" alt="">
+        </div>
+
+        <div class="flex flex-col mt-3">
+            <form name="myForm" class="signUp-info" >
+                <p class="py-6 text-3xl">Now let's make you a Nike Member.</p>
+                <div class="name flex flex-row justify-between">
+                    <input class="border border-[#707072] placeholder:text-[#707072] hover:border-black px-3 py-4 rounded-xl mt-2 w-[48%]" type="text" id="first_name" name="first_name" placeholder="First Name*">
+                    <small id="e1" class="text-red-600 pt-5 pl-5"></small>
+                    <input class="border border-[#707072] placeholder:text-[#707072] hover:border-black px-3 py-4 rounded-xl mt-2 w-[48%]" type="text" id="last_name" name="last_name" placeholder="Last Name*">
+                    <small id="e2" class="text-red-600 pt-5 pl-5"></small>
+                </div>
+                <div class="wrap border border-[#707072] rounded-xl p-2 px-4 mt-8  text-[#707072]">
+                    <small>Gender:</small><br>
+                    <input type="radio" id="gender" name="gender"> Male
+                    <i class="fa-solid fa-mars"></i>
+
+                    <input class="ml-5" type="radio" id="gender" name="gender"> Female
+                    <i class="fa-solid fa-venus"></i>
+
+                    <input class="ml-5" type="radio" id="gender" name="gender"> Other
+                    <i class="fa-solid fa-transgender"></i>
+                </div>
+                <small id="e8" class="text-red-600"></small>
+                <input type="email" id="email" name="email" class="border border-[#707072] placeholder:text-[#707072] hover:border-black px-3 py-4 rounded-xl mt-8 w-full" placeholder="Email*">
+                <small id="e3" class="text-red-600"></small>
+                <input type="password" id="password" name="password" class="border border-[#707072] placeholder:text-[#707072] hover:border-black px-3 py-4 rounded-xl mt-8 w-full" placeholder="Password*">
+                <small id="e4" class="text-red-600"></small>
+                <p class="px-4 pt-3 text-[13px] text-[#707072] flex items-center">X Minimum of 8 characters</p>
+                <p class="px-4 pt-3 text-[13px] text-[#707072] flex items-center">X Uppercase, lowercase letters and one number</p>
+                <input type="text" id="phone_number" name="phone_number" class="border border-[#707072] placeholder:text-[#707072] hover:border-black px-3 py-4 rounded-xl mt-8 w-full" placeholder="Phone No*">
+                <small id="e5" class="text-red-600"></small>
+                <input type="date" id="date" name="date" class="border placeholder:text-[#707072] border-[#707072] hover:border-black px-3 py-4 rounded-xl mt-8 w-full" placeholder="Date of Birth**">
+                <small id="e6" class="text-red-600"></small>
+                <textarea name="address" id="address" rows="3" cols="30" class="border placeholder:text-[#707072] border-[#707072] hover:border-black px-3 py-4 rounded-xl mt-8 w-full" placeholder="Address*"></textarea>
+                <small id="e7" class="text-red-600"></small>
+                <div class="mt-5">
+                    <input class="w-4 h-4" type="checkbox" id="notification" name="notification" >
+                    <span class="pl-3 text-xm text-black">I agree to Nike's <span class="underline font-semibold">Privacy Policy.</span>and <span class="underline font-semibold">Terms of Use</span></span>
+                </div>
+                <div class="mt-9 flex justify-end">
+                    <button class="text-xm bg-black my-2.5 px-6 py-3 rounded-3xl text-white hover:bg-[#707072]" onclick="return validateForm()">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
